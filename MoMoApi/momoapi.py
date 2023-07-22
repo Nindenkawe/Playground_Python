@@ -17,7 +17,7 @@ params = urllib.parse.urlencode({
 
 try:
     conn = http.client.HTTPSConnection('sandbox.momodeveloper.mtn.co.rw')
-    conn.request("POST", "/collection/v1_0/requesttopay?%s" % params, "500, EUR, help101, 250788314048, askingtopay", headers)
+    conn.request("POST", "/collection/v1_0/requesttopay?%s" % params, "500, EUR, help101, phonenumber, askingtopay", headers)
     response = conn.getresponse()
     data = response.read()
     print(data)

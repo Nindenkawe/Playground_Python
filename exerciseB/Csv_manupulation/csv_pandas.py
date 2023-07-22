@@ -15,12 +15,12 @@ def remove_duplicates_and_print(file_path):
     print(df_virgin_islands.to_string(index=False))
 
 if __name__ == "__main__":
-    file_path = "Pop.csv"
+    file_path = "exerciseB/Csv_manupulation/Population.csv"
     remove_duplicates_and_print(file_path)
  """
 
 
-""" import pandas as pd
+import pandas as pd
 
 def analyze_population(file_path):
     # Read the CSV file into a DataFrame
@@ -45,10 +45,10 @@ def analyze_population(file_path):
     print("Country with the most declining population over time: ", country_most_declining_population)
 
 if __name__ == "__main__":
-    file_path = "Pop.csv"
-    analyze_population(file_path) """
+    file_path = "exerciseB/Csv_manupulation/Population.csv"
+    analyze_population(file_path)
 
-import pandas as pd
+""" import pandas as pd
 
 def find_country_with_most_declining_population(df):
     # Calculate the difference in population between 2010 and 2019
@@ -71,4 +71,4 @@ if __name__ == "__main__":
     df_no_duplicates = df.drop_duplicates()
 
     country_most_declining_population = find_country_with_most_declining_population(df_no_duplicates)
-    print(f"The country with the most declining population from 2010 to 2019: {country_most_declining_population}")
+    print(f"The country with the most declining population from 2010 to 2019: {country_most_declining_population}") """
