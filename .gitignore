@@ -1,0 +1,9 @@
+# Ignore virtual environment folders
+include/
+share/
+lib/
+lib64/
+bin/
+
+# If you are using pipenv
+.Python
