@@ -7,3 +7,4 @@ bin/
 
 # If you are using pipenv
 .Python
+.vscode/*

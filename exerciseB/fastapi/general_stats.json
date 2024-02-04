@@ -1,0 +1,30 @@
+[
+  {
+    "Name": "Gross Domestic Product",
+    "Unit": "Constant 2017 prices, Billions RFW",
+    "Value": "2,909.6",
+    "Period": null,
+    "Source": "/publication/2087"
+  },
+  {
+    "Name": "Consumer Price Index",
+    "Unit": "February 2014 = 100",
+    "Value": "167.93",
+    "Period": null,
+    "Source": "/publication/2097"
+  },
+  {
+    "Name": "Life expectancy at birth",
+    "Unit": "Years (Projection)",
+    "Value": "69,6",
+    "Period": null,
+    "Source": "/publication/rphc4-main-indicators-report"
+  },
+  {
+    "Name": "Size of the resident population",
+    "Unit": "Number",
+    "Value": "13,246,394",
+    "Period": null,
+    "Source": "/publication/rphc4-population-projections"
+  }
+]
