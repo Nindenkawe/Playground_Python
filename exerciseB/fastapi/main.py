@@ -2,6 +2,8 @@ from fastapi import FastAPI
 import json
 from pathlib import Path
 
+# Create a FastAPI instance
+
 local_data = FastAPI()
 
 class DataHandler:
@@ -16,23 +18,20 @@ class DataHandler:
     def process_data(self):
         # Your data processing logic goes here
         # You can access self.data to get the loaded JSON data
-        pass
+        return
 
-data_handler = DataHandler("exerciseB/fastapi/general_stats.json")
-
+local_data_handler = DataHandler("exerciseB/fastapi/general_stats.json")
+rse_data_handler = DataHandler("exerciseB/fastapi/rse_data.json")
 @local_data.get("/")
 async def root():
     return {"message": "Processed and analyzed data is available at /general_stats."}
 
 @local_data.get("/general_stats")
 async def process_data():
-    data_handler.process_data()
-    return {"data": data_handler.data}
+    local_data_handler.process_data()
+    return {"data": local_data_handler.data}
 
-""" @local_data.get("/get_data/{item_id}")
-async def get_data_by_id(item_id: int):
-    item = data_handler.get_data_by_id(item_id)
-    if item:
-        return {"data": item}
-    else:
-        raise HTTPException(status_code=404, detail="Item not found") """
+@local_data.get("/rse_data")
+async def get_rse_data():
+    rse_data_handler.process_data()
+    return {"data": rse_data_handler.data}
